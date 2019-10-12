@@ -1,0 +1,33 @@
+.picture-of-the-day {
+  img {
+    max-height: 400px;
+    max-width: 400px;
+  }
+  img:hover {
+    max-height: 600px;
+    max-width: 600px;
+    animation-name: imageHover;
+    animation-duration: 0.5s;
+  }
+  padding: 1rem;
+  border: 2px solid wheat;
+}
+.picture-of-day-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+  color: white;
+  background-color: black;
+}
+
+@keyframes imageHover {
+  from {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  to {
+    max-width: 600px;
+    max-height: 600px;
+  }
+}
