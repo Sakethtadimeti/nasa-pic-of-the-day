@@ -11,6 +11,10 @@
   }
   padding: 1rem;
   border: 2px solid wheat;
+  .date-label {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 .picture-of-day-list {
   display: grid;

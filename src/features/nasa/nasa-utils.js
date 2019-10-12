@@ -1,8 +1,8 @@
 import moment from "moment";
 
-export function getDates(startDate, stopDate) {
+export function getDates(stopDate) {
   let dateArray = [];
-  let currentDate = moment(startDate);
+  let currentDate = moment(stopDate).subtract(30, "days");
 
   while (currentDate <= moment(stopDate)) {
     dateArray.push(moment(currentDate).format("YYYY-MM-DD"));
